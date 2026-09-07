@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import create_react_agent
 
 from .tools import calculator
-
+from rag.rag_tool import search_company_handbook
 
 load_dotenv()
 
@@ -19,7 +19,8 @@ model = ChatOpenAI(
 
 
 tools = [
-    calculator
+    calculator,
+    search_company_handbook
 ]
 
 

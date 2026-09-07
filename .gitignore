@@ -22,3 +22,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# RAG vector database
+data/chroma_db/
